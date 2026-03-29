@@ -1,4 +1,7 @@
 import SectionHeader from "./SectionHeader";
+import leHoiBien from "@/assets/le-hoi-bien.jpg";
+import caoToc from "@/assets/cao-toc.jpg";
+import hoiNghi from "@/assets/hoi-nghi.jpg";
 
 const NewsSection = () => {
   return (
@@ -12,7 +15,7 @@ const NewsSection = () => {
             {/* Featured */}
             <a href="#" className="bg-background rounded-lg overflow-hidden shadow-sm border border-gray-200 grid grid-cols-2 mb-4 transition-all hover:shadow-md hover:-translate-y-0.5 hover:border-primary/20 group block">
               <div className="relative overflow-hidden min-h-[220px]">
-                <div className="w-full h-full flex items-center justify-center text-[32px] bg-gradient-to-br from-[hsl(195,60%,85%)] to-[hsl(195,60%,75%)]">🌊</div>
+                <img src={leHoiBien} alt="Lễ hội biển Nha Trang" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width={800} height={544} />
                 <span className="absolute top-2.5 left-2.5 bg-destructive text-primary-foreground text-[11px] font-bold px-2.5 py-0.5 rounded-full tracking-wide">Sự kiện</span>
               </div>
               <div className="p-6 flex flex-col gap-2 justify-center">
@@ -32,12 +35,12 @@ const NewsSection = () => {
 
             <div className="grid grid-cols-2 gap-4 stagger">
               {[
-                { img: "🏔", color: "from-[hsl(120,30%,80%)] to-[hsl(120,30%,70%)]", title: "Khánh Hòa khởi công dự án đường bộ cao tốc Nha Trang – Đà Lạt", date: "18/03/2026", views: "1.865" },
-                { img: "🏙", color: "from-[hsl(260,50%,80%)] to-[hsl(260,50%,70%)]", title: "Gần 3 triệu cử tri Khánh Hòa tham gia bầu cử đại biểu Quốc hội khóa XVI", date: "17/03/2026", views: "3.120" },
+                { img: caoToc, alt: "Đường cao tốc Nha Trang – Đà Lạt", title: "Khánh Hòa khởi công dự án đường bộ cao tốc Nha Trang – Đà Lạt", date: "18/03/2026", views: "1.865" },
+                { img: hoiNghi, alt: "Hội nghị bầu cử", title: "Gần 3 triệu cử tri Khánh Hòa tham gia bầu cử đại biểu Quốc hội khóa XVI", date: "17/03/2026", views: "3.120" },
               ].map((card) => (
                 <a key={card.title} href="#" className="bg-background rounded-lg overflow-hidden shadow-sm border border-gray-200 transition-all hover:shadow-md hover:-translate-y-0.5 hover:border-primary/20 group block">
                   <div className="aspect-video overflow-hidden">
-                    <div className={`w-full h-full flex items-center justify-center text-[32px] bg-gradient-to-br ${card.color}`}>{card.img}</div>
+                    <img src={card.img} alt={card.alt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width={800} height={544} />
                   </div>
                   <div className="p-4 flex flex-col gap-2">
                     <div className="text-[15px] font-bold text-foreground leading-snug group-hover:text-primary transition-colors">{card.title}</div>
@@ -54,7 +57,6 @@ const NewsSection = () => {
 
           {/* Sidebar */}
           <div className="space-y-5">
-            {/* Events */}
             <div className="bg-background rounded-lg border border-gray-200 overflow-hidden">
               <div className="px-[18px] py-3.5 bg-gradient-to-r from-accent-dark to-accent text-accent-foreground text-[13px] font-bold tracking-wide flex items-center gap-2">
                 📅 Sự kiện sắp tới
@@ -79,7 +81,6 @@ const NewsSection = () => {
               </div>
             </div>
 
-            {/* Quick links */}
             <div className="bg-background rounded-lg border border-gray-200 overflow-hidden">
               <div className="px-[18px] py-3.5 bg-gradient-to-r from-primary to-primary-light text-primary-foreground text-[13px] font-bold tracking-wide flex items-center gap-2">
                 🔗 Liên kết nhanh
@@ -94,7 +95,6 @@ const NewsSection = () => {
               </div>
             </div>
 
-            {/* Tags */}
             <div className="bg-background rounded-lg border border-gray-200 overflow-hidden">
               <div className="px-[18px] py-3.5 bg-gradient-to-r from-[hsl(150,60%,25%)] to-success text-primary-foreground text-[13px] font-bold tracking-wide flex items-center gap-2">
                 🏷 Thông tin chuyên đề

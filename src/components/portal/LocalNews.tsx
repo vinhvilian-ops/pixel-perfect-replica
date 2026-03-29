@@ -1,8 +1,14 @@
 import SectionHeader from "./SectionHeader";
+import duaThuyen from "@/assets/dua-thuyen.jpg";
+import vanPhong from "@/assets/van-phong.jpg";
+import nhaTrangBay from "@/assets/nha-trang-bay.jpg";
+import caoToc from "@/assets/cao-toc.jpg";
+import hoiNghi from "@/assets/hoi-nghi.jpg";
+import hocSinh from "@/assets/hoc-sinh.jpg";
 
 interface NewsItem {
-  icon: string;
-  color: string;
+  img: string;
+  alt: string;
   title: string;
   date: string;
   views: string;
@@ -10,23 +16,21 @@ interface NewsItem {
 }
 
 const localNews: NewsItem[] = [
-  { icon: "🌊", color: "from-[hsl(195,60%,85%)] to-[hsl(195,60%,75%)]", title: "Hơn 200 VĐV tham gia Giải đua thuyền truyền thống huyện Vạn Ninh lần thứ I", date: "20/03/2026", views: "612", tag: "Vạn Ninh" },
-  { icon: "🏗", color: "from-[hsl(120,30%,80%)] to-[hsl(120,30%,70%)]", title: "Xã Cam Thành Bắc khởi công các dự án đầu tư hạ tầng nông thôn mới năm 2026", date: "19/03/2026", views: "445", tag: "Cam Lâm" },
-  { icon: "⚓", color: "from-[hsl(217,60%,85%)] to-[hsl(217,60%,75%)]", title: "Tuyên truyền pháp luật về thủ tục hành chính cho ngư dân thành phố Cam Ranh", date: "18/03/2026", views: "378", tag: "Cam Ranh" },
+  { img: duaThuyen, alt: "Đua thuyền Vạn Ninh", title: "Hơn 200 VĐV tham gia Giải đua thuyền truyền thống huyện Vạn Ninh lần thứ I", date: "20/03/2026", views: "612", tag: "Vạn Ninh" },
+  { img: vanPhong, alt: "Cam Thành Bắc", title: "Xã Cam Thành Bắc khởi công các dự án đầu tư hạ tầng nông thôn mới năm 2026", date: "19/03/2026", views: "445", tag: "Cam Lâm" },
+  { img: nhaTrangBay, alt: "Cam Ranh", title: "Tuyên truyền pháp luật về thủ tục hành chính cho ngư dân thành phố Cam Ranh", date: "18/03/2026", views: "378", tag: "Cam Ranh" },
 ];
 
 const sectorNews: NewsItem[] = [
-  { icon: "🤝", color: "from-[hsl(175,60%,80%)] to-[hsl(175,60%,70%)]", title: "Liên đoàn Lao động tỉnh triển khai kế hoạch chăm lo người lao động Tháng Công nhân 2026", date: "20/03/2026", views: "534", tag: "LĐLĐ tỉnh" },
-  { icon: "🛣", color: "from-[hsl(15,80%,85%)] to-[hsl(15,80%,75%)]", title: "Sở Giao thông Vận tải thẩm tra hồ sơ dự án nâng cấp Quốc lộ 26 qua địa bàn tỉnh", date: "18/03/2026", views: "398", tag: "Sở GTVT" },
-  { icon: "🎓", color: "from-[hsl(260,50%,80%)] to-[hsl(260,50%,70%)]", title: "Sở GD&ĐT triển khai chương trình giáo dục STEM tại các trường THPT tỉnh Khánh Hòa", date: "17/03/2026", views: "621", tag: "Sở GD&ĐT" },
+  { img: hoiNghi, alt: "Liên đoàn lao động", title: "Liên đoàn Lao động tỉnh triển khai kế hoạch chăm lo người lao động Tháng Công nhân 2026", date: "20/03/2026", views: "534", tag: "LĐLĐ tỉnh" },
+  { img: caoToc, alt: "Quốc lộ 26", title: "Sở Giao thông Vận tải thẩm tra hồ sơ dự án nâng cấp Quốc lộ 26 qua địa bàn tỉnh", date: "18/03/2026", views: "398", tag: "Sở GTVT" },
+  { img: hocSinh, alt: "Giáo dục STEM", title: "Sở GD&ĐT triển khai chương trình giáo dục STEM tại các trường THPT tỉnh Khánh Hòa", date: "17/03/2026", views: "621", tag: "Sở GD&ĐT" },
 ];
 
 const NewsListItem = ({ item }: { item: NewsItem }) => (
   <a href="#" className="flex gap-3.5 py-3 border-b border-gray-200 last:border-b-0 items-start group">
     <div className="w-[88px] h-16 rounded-lg overflow-hidden flex-shrink-0">
-      <div className={`w-full h-full flex items-center justify-center text-[22px] bg-gradient-to-br ${item.color} group-hover:scale-[1.08] transition-transform duration-500`}>
-        {item.icon}
-      </div>
+      <img src={item.img} alt={item.alt} className="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-500" loading="lazy" width={88} height={64} />
     </div>
     <div>
       <div className="text-[13.5px] font-semibold leading-snug mb-1.5 line-clamp-2 group-hover:text-primary transition-colors">
