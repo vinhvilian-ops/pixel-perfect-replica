@@ -1,16 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import useScrollAnimation from "@/hooks/useScrollAnimation";
+import TopBar from "@/components/portal/TopBar";
+import Header from "@/components/portal/Header";
+import HeroBanner from "@/components/portal/HeroBanner";
+import QuickActions from "@/components/portal/QuickActions";
+import NewsSection from "@/components/portal/NewsSection";
+import DirectiveSection from "@/components/portal/DirectiveSection";
+import LocalNews from "@/components/portal/LocalNews";
+import DocumentSection from "@/components/portal/DocumentSection";
+import MediaGallery from "@/components/portal/MediaGallery";
+import Footer from "@/components/portal/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useScrollAnimation();
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen">
+      <TopBar />
+      <Header />
+      <HeroBanner />
+      <QuickActions />
+      <NewsSection />
+      <DirectiveSection />
+      <LocalNews />
+      <DocumentSection />
+      <MediaGallery />
+      <Footer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
