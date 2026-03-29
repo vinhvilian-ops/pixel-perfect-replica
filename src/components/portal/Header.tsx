@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Search, Moon } from "lucide-react";
+import logoKH from "@/assets/logo-kh.png";
 
 interface NavItem {
   label: string;
@@ -45,9 +46,7 @@ const Header = () => {
     <header className="bg-background sticky top-0 z-50 shadow-[0_2px_20px_rgba(0,63,136,0.10)]">
       <div className="container flex items-center gap-6 h-[72px]">
         <a href="#" className="flex items-center gap-3 flex-shrink-0 min-w-[200px]">
-          <div className="w-[46px] h-[46px] bg-gradient-to-br from-primary to-teal rounded-[10px] flex items-center justify-center text-primary-foreground font-extrabold text-lg tracking-tight shadow-[0_4px_12px_rgba(0,63,136,0.3)]">
-            KH
-          </div>
+          <img src={logoKH} alt="Logo Khánh Hòa" className="w-[46px] h-[46px] object-contain" />
           <div className="leading-tight">
             <div className="text-[13px] font-bold text-primary">Cổng Thông Tin Điện Tử</div>
             <div className="text-[11px] text-gray-500 font-medium">Tỉnh Khánh Hòa</div>

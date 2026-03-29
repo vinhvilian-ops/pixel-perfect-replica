@@ -1,6 +1,15 @@
+import nhaTrangBay from "@/assets/nha-trang-bay.jpg";
+import quocHuy from "@/assets/quoc-huy.png";
+
 const HeroBanner = () => {
   return (
-    <section className="bg-gradient-to-br from-primary-dark via-[hsl(207,100%,31%)] to-teal min-h-[420px] relative overflow-hidden flex items-center">
+    <section className="min-h-[420px] relative overflow-hidden flex items-center">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img src={nhaTrangBay} alt="Vịnh Nha Trang" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/90 via-primary/80 to-teal/60" />
+      </div>
+
       {/* Radial overlays */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_800px_600px_at_80%_50%,rgba(0,168,156,0.25)_0%,transparent_70%)]" />
@@ -18,8 +27,12 @@ const HeroBanner = () => {
 
       <div className="container relative z-10 py-12 pb-[100px] grid grid-cols-[1fr_340px] gap-10 items-center">
         <div>
-          <div className="inline-flex items-center gap-1.5 bg-accent/20 border border-accent/40 text-accent px-3 py-1.5 rounded-full text-xs font-bold tracking-wide mb-4 backdrop-blur-sm">
-            ⭐ Tin nổi bật
+          {/* Quốc huy + badge */}
+          <div className="flex items-center gap-3 mb-5">
+            <img src={quocHuy} alt="Quốc huy Việt Nam" className="w-[52px] h-[52px] drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]" />
+            <div className="inline-flex items-center gap-1.5 bg-accent/20 border border-accent/40 text-accent px-3 py-1.5 rounded-full text-xs font-bold tracking-wide backdrop-blur-sm">
+              ⭐ Tin nổi bật
+            </div>
           </div>
           <h1 className="text-[34px] font-extrabold text-primary-foreground leading-tight mb-4 drop-shadow-[0_2px_20px_rgba(0,0,0,0.2)]">
             Khánh Hòa hướng đến <span className="text-accent">trung tâm kinh tế biển</span> quốc gia vào năm 2030

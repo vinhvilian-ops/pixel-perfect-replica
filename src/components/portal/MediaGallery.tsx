@@ -1,9 +1,12 @@
 import SectionHeader from "./SectionHeader";
+import hoiNghi from "@/assets/hoi-nghi.jpg";
+import thapPonagar from "@/assets/thap-ponagar.jpg";
+import hocSinh from "@/assets/hoc-sinh.jpg";
 
 const mediaItems = [
-  { icon: "🎥", color: "from-[hsl(195,60%,85%)] to-[hsl(195,60%,75%)]", caption: "Hướng dẫn cử tri về Công tác bầu cử ĐBQH khóa XVI", type: "video", duration: "05:12" },
-  { icon: "🏖", color: "from-[hsl(175,60%,80%)] to-[hsl(175,60%,70%)]", caption: "Độc đáo Lễ hội tháp Bà Ponagar mùa xuân 2026", type: "photo" },
-  { icon: "🏅", color: "from-[hsl(217,60%,85%)] to-[hsl(217,60%,75%)]", caption: "Vinh danh học sinh, sinh viên xuất sắc tiêu biểu năm 2025", type: "photo" },
+  { img: hoiNghi, alt: "Hướng dẫn bầu cử", caption: "Hướng dẫn cử tri về Công tác bầu cử ĐBQH khóa XVI", type: "video", duration: "05:12" },
+  { img: thapPonagar, alt: "Tháp Bà Ponagar", caption: "Độc đáo Lễ hội tháp Bà Ponagar mùa xuân 2026", type: "photo" },
+  { img: hocSinh, alt: "Vinh danh học sinh", caption: "Vinh danh học sinh, sinh viên xuất sắc tiêu biểu năm 2025", type: "photo" },
 ];
 
 const MediaGallery = () => {
@@ -14,9 +17,7 @@ const MediaGallery = () => {
         <div className="grid grid-cols-3 gap-4 stagger">
           {mediaItems.map((item, i) => (
             <div key={i} className="rounded-lg overflow-hidden relative aspect-[16/10] cursor-pointer group">
-              <div className={`absolute inset-0 flex items-center justify-center text-[48px] bg-gradient-to-br ${item.color} group-hover:scale-[1.06] transition-transform duration-500`}>
-                {item.icon}
-              </div>
+              <img src={item.img} alt={item.alt} className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-500" loading="lazy" width={800} height={544} />
 
               {item.type === "video" && (
                 <>

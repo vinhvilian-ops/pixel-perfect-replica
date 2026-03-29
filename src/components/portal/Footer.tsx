@@ -1,3 +1,5 @@
+import logoKH from "@/assets/logo-kh.png";
+
 const departments = [
   "Văn phòng UBND", "Sở GD&ĐT", "Sở Nội vụ", "Sở Tài chính", "Sở Ngoại vụ",
   "Sở NN&MT", "Sở Tư pháp", "Sở VHTTDL", "Sở Xây dựng", "Sở Y tế", "Sở KH&CN",
@@ -37,17 +39,13 @@ const FooterColumn = ({ title, links }: { title: string; links: string[] }) => (
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-[hsl(213,100%,13%)] via-[hsl(213,100%,18%)] to-[hsl(213,100%,22%)] text-primary-foreground/80 pt-12 relative overflow-hidden">
-      {/* Top gradient bar */}
       <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-primary-light via-teal via-accent to-destructive" />
 
       <div className="container pb-10">
         <div className="grid grid-cols-[280px_1fr_1fr_1fr] gap-10">
-          {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-[46px] h-[46px] bg-gradient-to-br from-primary-light to-teal rounded-[10px] flex items-center justify-center text-primary-foreground font-extrabold text-lg">
-                KH
-              </div>
+              <img src={logoKH} alt="Logo Khánh Hòa" className="w-[46px] h-[46px] object-contain brightness-0 invert" />
               <div>
                 <div className="text-sm font-bold text-primary-foreground leading-tight">Cổng Thông Tin Điện Tử</div>
                 <div className="text-[11.5px] text-primary-foreground/60 mt-0.5">Tỉnh Khánh Hòa</div>
