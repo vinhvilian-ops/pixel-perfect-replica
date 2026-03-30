@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-const languages = ["VI", "EN", "JP", "KR", "ZH"];
+const languages = ["VI", "EN", "РУС"];
 
 const TopBar = () => {
   const [activeLang, setActiveLang] = useState("VI");
 
   return (
-    <div className="bg-gradient-to-r from-primary-dark to-primary py-1.5 text-xs text-primary-foreground/85">
+    <div className="bg-gradient-to-br from-primary-dark to-primary py-1.5 text-xs text-primary-foreground/85">
       <div className="container flex items-center justify-between gap-4">
         <div className="flex items-center gap-5">
           <span className="text-accent text-sm">★</span>

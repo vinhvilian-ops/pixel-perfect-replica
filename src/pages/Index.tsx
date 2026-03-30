@@ -3,11 +3,13 @@ import TopBar from "@/components/portal/TopBar";
 import Header from "@/components/portal/Header";
 import HeroBanner from "@/components/portal/HeroBanner";
 import QuickActions from "@/components/portal/QuickActions";
-import NewsSection from "@/components/portal/NewsSection";
-import DirectiveSection from "@/components/portal/DirectiveSection";
-import LocalNews from "@/components/portal/LocalNews";
-import DocumentSection from "@/components/portal/DocumentSection";
-import MediaGallery from "@/components/portal/MediaGallery";
+import DirectiveTabSection from "@/components/portal/DirectiveTabSection";
+import PolicySection from "@/components/portal/PolicySection";
+import CitizenNewsSection from "@/components/portal/CitizenNewsSection";
+import TourismSection from "@/components/portal/TourismSection";
+import InfographicsSection from "@/components/portal/InfographicsSection";
+import VideoSection from "@/components/portal/VideoSection";
+import DepartmentSection from "@/components/portal/DepartmentSection";
 import Footer from "@/components/portal/Footer";
 
 const Index = () => {
@@ -19,11 +21,13 @@ const Index = () => {
       <Header />
       <HeroBanner />
       <QuickActions />
-      <NewsSection />
-      <DirectiveSection />
-      <LocalNews />
-      <DocumentSection />
-      <MediaGallery />
+      <DirectiveTabSection />
+      <PolicySection />
+      <CitizenNewsSection />
+      <TourismSection />
+      <InfographicsSection />
+      <VideoSection />
+      <DepartmentSection />
       <Footer />
     </div>
   );
