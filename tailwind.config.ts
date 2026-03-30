@@ -56,6 +56,11 @@ export default {
         },
         success: "hsl(var(--success))",
         teal: "hsl(var(--teal))",
+        red: {
+          DEFAULT: "hsl(var(--destructive))",
+          light: "hsl(var(--destructive-light))",
+        },
+        green: "hsl(var(--success))",
         gray: {
           50: "hsl(var(--gray-50))",
           100: "hsl(var(--gray-100))",
