@@ -12,31 +12,28 @@ interface NavItem {
 const navItems: NavItem[] = [
   { label: "Trang chủ", href: "#", active: true },
   {
-    label: "Tin tức – Sự kiện",
+    label: "Giới thiệu",
     href: "#",
     children: [
-      { label: "Tin tức tổng hợp", href: "#" },
-      { label: "Chỉ đạo – Điều hành", href: "#" },
-      { label: "Sự kiện nổi bật", href: "#" },
-      { label: "Thông báo", href: "#" },
-      { label: "Tin địa phương", href: "#" },
+      { label: "Lịch sử – Địa lý", href: "#" },
+      { label: "Lãnh đạo tỉnh", href: "#" },
+      { label: "Bản đồ hành chính", href: "#" },
+      { label: "Trường Sa thân yêu", href: "#" },
+    ],
+  },
+  {
+    label: "Chính quyền",
+    href: "#",
+    children: [
+      { label: "UBND tỉnh Khánh Hòa", href: "#" },
+      { label: "HĐND tỉnh", href: "#" },
+      { label: "Các sở, ban ngành", href: "#" },
+      { label: "UBND các huyện, thành phố", href: "#" },
     ],
   },
   { label: "Công dân", href: "#" },
   { label: "Doanh nghiệp", href: "#" },
-  { label: "Tiếp cận thông tin", href: "#" },
-  {
-    label: "Thông tin chuyên đề",
-    href: "#",
-    children: [
-      { label: "Du lịch Khánh Hòa", href: "#" },
-      { label: "Phát triển kinh tế biển", href: "#" },
-      { label: "Chuyển đổi số", href: "#" },
-      { label: "Quy hoạch – Đô thị", href: "#" },
-      { label: "Bầu cử đại biểu", href: "#" },
-    ],
-  },
-  { label: "Thủ tục hành chính", href: "#" },
+  { label: "Du khách", href: "#" },
 ];
 
 const Header = () => {
