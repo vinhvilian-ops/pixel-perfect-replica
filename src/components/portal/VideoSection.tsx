@@ -17,7 +17,7 @@ const sideVideos = [
 
 const VideoSection = () => {
   return (
-    <section className="py-12">
+    <section className="py-6">
       <div className="container">
         <SectionHeader title="Video Clip" />
         <div className="grid grid-cols-[1fr_320px] gap-6 fade-up">

@@ -36,7 +36,7 @@ const TourismSection = () => {
   const [activeTab, setActiveTab] = useState<"dk" | "ta">("dk");
 
   return (
-    <section className="py-12">
+    <section className="py-6">
       <div className="container">
         <div className="grid grid-cols-[1fr_340px] gap-8">
           <div>
