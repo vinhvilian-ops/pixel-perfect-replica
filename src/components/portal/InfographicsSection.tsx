@@ -13,7 +13,7 @@ const infographics = [
 
 const InfographicsSection = () => {
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-background">
       <div className="container">
         <SectionHeader title="Đồ họa trực quan" />
         <div className="grid grid-cols-4 gap-4 stagger">

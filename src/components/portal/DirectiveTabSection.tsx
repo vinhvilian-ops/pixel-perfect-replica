@@ -57,7 +57,7 @@ const DirectiveTabSection = () => {
   const [activeTab, setActiveTab] = useState<"cdh" | "snd">("cdh");
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-background">
       <div className="container">
         <div className="grid grid-cols-[1fr_340px] gap-8">
           <div>
