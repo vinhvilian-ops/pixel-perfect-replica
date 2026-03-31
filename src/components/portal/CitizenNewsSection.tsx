@@ -68,6 +68,10 @@ const CitizenNewsSection = () => {
                   <a href="#" className="text-[13px] font-bold text-red flex items-center gap-1 hover:gap-2.5 transition-all">Xem tất cả bài viết ›</a>
                 </div>
                 <div className="grid grid-cols-2 gap-4 mt-6">
+                  <GradientBanner icon="❓" title="CÔNG DÂN, DOANH NGHIỆP HỎI" subtitle="Cơ quan chức năng trả lời" gradient="bg-gradient-to-br from-red to-red-light" />
+                  <GradientBanner icon="🔍" title="TRA CỨU CỔNG TTĐT TỈNH" subtitle="Ninh Thuận và Khánh Hòa" gradient="bg-gradient-to-br from-primary to-[#1a1a8e]" />
+                </div>
+                <div className="grid grid-cols-2 gap-4 mt-4">
                   <GradientBanner icon="🌊" title="Cổng thông tin xúc tiến đầu tư" subtitle="Tỉnh Khánh Hòa" gradient="bg-gradient-to-br from-primary to-teal" />
                   <GradientBanner icon="💻" title="Chuyển đổi số" subtitle="Đồng hành cùng cuộc sống" gradient="bg-gradient-to-br from-[#1a1a6e] to-[#4040cc]" />
                 </div>
