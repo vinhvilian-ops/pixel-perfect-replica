@@ -14,7 +14,7 @@ const variants = {
 };
 
 const SidebarPanel = ({ title, icon, variant = "primary", children }: SidebarPanelProps) => (
-  <div className="bg-background rounded-xl border border-gray-200 overflow-hidden mb-5 fade-up">
+  <div className="bg-background rounded-xl border border-gray-200 overflow-hidden mb-3 fade-up">
     <div className={`${variants[variant]} text-primary-foreground px-[18px] py-3.5 text-[13px] font-bold tracking-wide flex items-center gap-2`}>
       {icon} {title}
     </div>

@@ -17,7 +17,7 @@ const DepartmentSection = () => {
   const [activeTab, setActiveTab] = useState<"sb" | "ubnd">("sb");
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-background">
       <div className="container fade-up">
         <div className="flex gap-0 mb-5 border-b-2 border-gray-200">
           <TabButton label="Các sở, ban" active={activeTab === "sb"} onClick={() => setActiveTab("sb")} />

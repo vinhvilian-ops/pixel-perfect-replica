@@ -27,7 +27,7 @@ const PolicySection = () => {
   const [activeTab, setActiveTab] = useState<"csm" | "tv">("csm");
 
   return (
-    <section className="py-6">
+    <section className="pt-0 pb-6">
       <div className="container">
         <div className="grid grid-cols-[1fr_340px] gap-8">
           <div>
