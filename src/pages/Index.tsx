@@ -22,7 +22,6 @@ const Index = () => {
       <HeroBanner />
       <QuickActions />
       <DirectiveTabSection />
-      <PolicySection />
       <CitizenNewsSection />
       <TourismSection />
       <InfographicsSection />
