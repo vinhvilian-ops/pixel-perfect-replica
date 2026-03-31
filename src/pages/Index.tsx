@@ -4,7 +4,7 @@ import Header from "@/components/portal/Header";
 import HeroBanner from "@/components/portal/HeroBanner";
 import QuickActions from "@/components/portal/QuickActions";
 import DirectiveTabSection from "@/components/portal/DirectiveTabSection";
-import PolicySection from "@/components/portal/PolicySection";
+
 import CitizenNewsSection from "@/components/portal/CitizenNewsSection";
 import TourismSection from "@/components/portal/TourismSection";
 import InfographicsSection from "@/components/portal/InfographicsSection";
@@ -22,7 +22,6 @@ const Index = () => {
       <HeroBanner />
       <QuickActions />
       <DirectiveTabSection />
-      <PolicySection />
       <CitizenNewsSection />
       <TourismSection />
       <InfographicsSection />
