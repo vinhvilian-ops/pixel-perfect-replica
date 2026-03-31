@@ -51,7 +51,7 @@ const CitizenNewsSection = () => {
   return (
     <section className="py-6 bg-background">
       <div className="container">
-        <div className="grid grid-cols-[1fr_340px] gap-8">
+        <div className="grid grid-cols-[1fr_340px] gap-8 items-start">
           <div>
             <div className="flex gap-0 mb-5 border-b-2 border-gray-200">
               <TabButton label="Tin nổi bật dành cho công dân" active={activeTab === "cd"} onClick={() => setActiveTab("cd")} />
