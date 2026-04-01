@@ -72,6 +72,17 @@ const DirectiveTabSection = () => {
 
             {activeTab === "cdh" && (
               <>
+                <a href="#" className="grid grid-cols-2 rounded-xl overflow-hidden shadow-sm border border-gray-200 no-underline text-foreground mb-4 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                  <div className="relative min-h-[200px] overflow-hidden bg-gray-200">
+                    <img src={duLich} alt="Du lịch" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width={480} height={200} />
+                    <span className="absolute top-2.5 left-2.5 bg-red text-primary-foreground text-[11px] font-bold px-2.5 py-0.5 rounded-full">Chỉ đạo điều hành</span>
+                  </div>
+                  <div className="p-6 flex flex-col justify-center gap-2">
+                    <div className="text-base font-bold leading-snug group-hover:text-primary transition-colors">Phê duyệt Quy hoạch tổng thể phát triển du lịch tỉnh Khánh Hòa đến năm 2035, tầm nhìn đến năm 2050</div>
+                    <div className="text-xs text-gray-500">📅 29/03/2026</div>
+                    <div className="text-[13px] font-bold text-red flex items-center gap-1">Đọc tiếp →</div>
+                  </div>
+                </a>
                 <div className="grid grid-cols-2 gap-5">
                   <div>{directiveNews.map((item, i) => <NewsListItem key={i} {...item} />)}</div>
                   <div>{directiveNews2.map((item, i) => <NewsListItem key={i} {...item} />)}</div>
