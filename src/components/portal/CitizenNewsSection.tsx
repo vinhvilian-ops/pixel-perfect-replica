@@ -83,6 +83,17 @@ const CitizenNewsSection = () => {
 
             {activeTab === "cd" && (
               <>
+                <a href="#" className="grid grid-cols-2 rounded-xl overflow-hidden shadow-sm border border-gray-200 no-underline text-foreground mb-4 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                  <div className="relative min-h-[200px] overflow-hidden bg-gray-200">
+                    <img src={hoiNghi} alt="Hội nghị" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width={480} height={200} />
+                    <span className="absolute top-2.5 left-2.5 bg-red text-primary-foreground text-[11px] font-bold px-2.5 py-0.5 rounded-full">Tin nổi bật</span>
+                  </div>
+                  <div className="p-6 flex flex-col justify-center gap-2">
+                    <div className="text-base font-bold leading-snug group-hover:text-primary transition-colors">Triển khai Kế hoạch Ngày Tôn vinh tiếng Việt trong cộng đồng người Việt Nam ở nước ngoài</div>
+                    <div className="text-xs text-gray-500">📅 27/03/2026</div>
+                    <div className="text-[13px] font-bold text-red flex items-center gap-1">Đọc tiếp →</div>
+                  </div>
+                </a>
                 <div className="grid grid-cols-2 gap-5">
                   <div>{citizenNews.map((item, i) => <NewsListItem key={i} {...item} />)}</div>
                   <div>{citizenNews2.map((item, i) => <NewsListItem key={i} {...item} />)}</div>
