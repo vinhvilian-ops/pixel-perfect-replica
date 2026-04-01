@@ -18,12 +18,16 @@ const directiveNews = [
   { img: xayDung, alt: "Xây dựng", title: "Nâng cao hiệu quả phối hợp trong triển khai các dự án đầu tư xây dựng", date: "29/03/2026" },
   { img: vanHoa, alt: "Văn hóa", title: "Xây dựng Khánh Hòa trở thành điểm đến của các sự kiện văn hóa, nghệ thuật và giải trí biển", date: "27/03/2026" },
   { img: nhaTrangBay, alt: "Văn hóa", title: "Khánh Hòa đặt mục tiêu 100% xã, phường, đặc khu đạt chuẩn phát triển văn hóa toàn diện vào năm 2030", date: "27/03/2026" },
+  { img: caoToc, alt: "Giao thông", title: "Đẩy nhanh tiến độ hoàn thiện tuyến cao tốc Nha Trang – Cam Lâm giai đoạn 2", date: "26/03/2026" },
+  { img: hoiNghi, alt: "Hội nghị", title: "Hội nghị sơ kết 3 năm thực hiện Nghị quyết về phát triển kinh tế biển", date: "25/03/2026" },
 ];
 
 const directiveNews2 = [
   { img: chuyenDoiSo, alt: "Quốc tế", title: "Triển khai Kế hoạch Ngày Tôn vinh tiếng Việt trong cộng đồng người Việt Nam ở nước ngoài năm 2026", date: "27/03/2026" },
   { img: duLich, alt: "Thuế", title: "Nâng cao hiệu quả quản lý thuế trên địa bàn tỉnh", date: "27/03/2026" },
   { img: yTe, alt: "Y tế", title: "Kế hoạch phòng, chống bệnh phong giai đoạn 2026 – 2030", date: "26/03/2026" },
+  { img: duaThuyen, alt: "Thể thao", title: "Tổ chức thành công Giải đua thuyền truyền thống tỉnh Khánh Hòa lần thứ XII", date: "25/03/2026" },
+  { img: hocSinh, alt: "Giáo dục", title: "Triển khai chương trình giáo dục kỹ năng sống cho học sinh tiểu học trên toàn tỉnh", date: "24/03/2026" },
 ];
 
 const sectorNews = [
@@ -68,6 +72,17 @@ const DirectiveTabSection = () => {
 
             {activeTab === "cdh" && (
               <>
+                <a href="#" className="grid grid-cols-2 rounded-xl overflow-hidden shadow-sm border border-gray-200 no-underline text-foreground mb-4 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                  <div className="relative min-h-[200px] overflow-hidden bg-gray-200">
+                    <img src={duLich} alt="Du lịch" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width={480} height={200} />
+                    <span className="absolute top-2.5 left-2.5 bg-red text-primary-foreground text-[11px] font-bold px-2.5 py-0.5 rounded-full">Chỉ đạo điều hành</span>
+                  </div>
+                  <div className="p-6 flex flex-col justify-center gap-2">
+                    <div className="text-base font-bold leading-snug group-hover:text-primary transition-colors">Phê duyệt Quy hoạch tổng thể phát triển du lịch tỉnh Khánh Hòa đến năm 2035, tầm nhìn đến năm 2050</div>
+                    <div className="text-xs text-gray-500">📅 29/03/2026</div>
+                    <div className="text-[13px] font-bold text-red flex items-center gap-1">Đọc tiếp →</div>
+                  </div>
+                </a>
                 <div className="grid grid-cols-2 gap-5">
                   <div>{directiveNews.map((item, i) => <NewsListItem key={i} {...item} />)}</div>
                   <div>{directiveNews2.map((item, i) => <NewsListItem key={i} {...item} />)}</div>
