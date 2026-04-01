@@ -13,6 +13,9 @@ const tourismNews = [
   { img: nhaTrangBay, alt: "Biển", title: "Trải nghiệm văn hóa biển Khánh Hòa tại VITM 2026", date: "24/03/2026" },
   { img: duongSat, alt: "Bay", title: "Khai trương đường bay thẳng từ thủ đô Belarus đến Khánh Hòa", date: "20/03/2026" },
   { img: duLich, alt: "Tàu", title: "Tàu du lịch biển Piano Land đưa 1.600 khách đến Khánh Hòa", date: "16/03/2026" },
+  { img: vanHoa, alt: "Lễ hội", title: "Lễ hội Tháp Bà Ponagar Nha Trang 2026 thu hút hàng nghìn du khách trong và ngoài nước", date: "14/03/2026" },
+  { img: thapPonagar, alt: "Di sản", title: "Khánh Hòa đẩy mạnh bảo tồn và phát huy giá trị di sản văn hóa gắn với phát triển du lịch", date: "12/03/2026" },
+  { img: hocSinh, alt: "Ẩm thực", title: "Liên hoan ẩm thực đường phố Nha Trang lần thứ III – 2026", date: "10/03/2026" },
 ];
 
 const mediaItems = [
