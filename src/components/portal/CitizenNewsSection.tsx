@@ -19,6 +19,8 @@ const citizenNews = [
   { img: bongDa, alt: "Marathon", title: "Hơn 12.000 vận động viên tranh tài tại Giải vô địch quốc gia Marathon – Báo Tiền Phong lần thứ 67", date: "26/03/2026" },
   { img: hoiNghi, alt: "Hội nghị", title: "Hội nghị triển khai Nghị quyết về phát triển kinh tế - xã hội vùng Duyên hải Nam Trung Bộ", date: "25/03/2026" },
   { img: caoToc, alt: "Cao tốc", title: "Đẩy nhanh tiến độ thi công các tuyến cao tốc trọng điểm khu vực miền Trung", date: "25/03/2026" },
+  { img: duongSat, alt: "Đường sắt", title: "Khánh Hòa đặt mục tiêu 100% xã, phường, đặc khu đạt chuẩn phát triển văn hóa toàn diện", date: "24/03/2026" },
+  { img: yTe, alt: "Y tế", title: "Kế hoạch phòng bệnh phong giai đoạn 2026 – 2030", date: "24/03/2026" },
 ];
 
 const citizenNews2 = [
@@ -27,6 +29,8 @@ const citizenNews2 = [
   { img: duaThuyen, alt: "Lao động", title: "Hưởng ứng Ngày Thế giới phòng, chống bệnh lao 24-3: Phát hiện sớm để tiến tới chấm dứt bệnh lao", date: "24/03/2026" },
   { img: duongSat, alt: "Đường sắt", title: "Quy hoạch mạng lưới đường sắt quốc gia thời kỳ 2021–2030, tầm nhìn đến năm 2050", date: "23/03/2026" },
   { img: xayDung, alt: "Quy hoạch", title: "Phê duyệt quy hoạch sử dụng đất giai đoạn 2026–2030 trên địa bàn tỉnh", date: "22/03/2026" },
+  { img: chuyenDoiSo, alt: "Chuyển đổi số", title: "Nâng cao hiệu quả phối hợp trong triển khai các dự án đầu tư xây dựng", date: "21/03/2026" },
+  { img: caoToc, alt: "Giao thông", title: "Xây dựng Khánh Hòa trở thành điểm đến của các sự kiện văn hóa, nghệ thuật và giải trí biển", date: "20/03/2026" },
 ];
 
 const policyNews = [
@@ -83,6 +87,17 @@ const CitizenNewsSection = () => {
 
             {activeTab === "cd" && (
               <>
+                <a href="#" className="grid grid-cols-2 rounded-xl overflow-hidden shadow-sm border border-gray-200 no-underline text-foreground mb-4 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                  <div className="relative min-h-[200px] overflow-hidden bg-gray-200">
+                    <img src={hoiNghi} alt="Hội nghị" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width={480} height={200} />
+                    <span className="absolute top-2.5 left-2.5 bg-red text-primary-foreground text-[11px] font-bold px-2.5 py-0.5 rounded-full">Tin nổi bật</span>
+                  </div>
+                  <div className="p-6 flex flex-col justify-center gap-2">
+                    <div className="text-base font-bold leading-snug group-hover:text-primary transition-colors">Triển khai Kế hoạch Ngày Tôn vinh tiếng Việt trong cộng đồng người Việt Nam ở nước ngoài</div>
+                    <div className="text-xs text-gray-500">📅 27/03/2026</div>
+                    <div className="text-[13px] font-bold text-red flex items-center gap-1">Đọc tiếp →</div>
+                  </div>
+                </a>
                 <div className="grid grid-cols-2 gap-5">
                   <div>{citizenNews.map((item, i) => <NewsListItem key={i} {...item} />)}</div>
                   <div>{citizenNews2.map((item, i) => <NewsListItem key={i} {...item} />)}</div>
