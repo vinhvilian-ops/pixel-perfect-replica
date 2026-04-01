@@ -171,12 +171,18 @@ const CitizenNewsSection = () => {
               </div>
             </SidebarPanel>
 
-            {promoLinks.map((link, i) => (
-              <a key={i} href="#" className={`${link.gradient} block rounded-xl px-[18px] py-3.5 no-underline text-center mb-3 shadow-sm hover:opacity-90 transition-opacity`}>
-                <div className="text-[13px] font-extrabold text-primary-foreground">{link.title}</div>
-                <div className="text-[11px] font-semibold text-primary-foreground/80 mt-0.5">{link.sub}</div>
-              </a>
-            ))}
+            <div className="relative rounded-xl overflow-hidden mb-3">
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400')] bg-cover bg-center opacity-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 to-gray-100/90"></div>
+              <div className="relative p-3 flex flex-col gap-2.5">
+                {promoLinks.map((link, i) => (
+                  <a key={i} href="#" className={`${link.gradient} block rounded-xl px-[18px] py-3.5 no-underline text-center shadow-sm hover:opacity-90 hover:scale-[1.02] transition-all`}>
+                    <div className="text-[13px] font-extrabold text-primary-foreground">{link.title}</div>
+                    <div className="text-[11px] font-semibold text-primary-foreground/80 mt-0.5">{link.sub}</div>
+                  </a>
+                ))}
+              </div>
+            </div>
 
             <SidebarPanel title="Thông tin cho báo chí" icon="📺" variant="accent">
               <div className="p-2">
