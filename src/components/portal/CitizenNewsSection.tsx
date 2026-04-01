@@ -19,6 +19,8 @@ const citizenNews = [
   { img: bongDa, alt: "Marathon", title: "Hơn 12.000 vận động viên tranh tài tại Giải vô địch quốc gia Marathon – Báo Tiền Phong lần thứ 67", date: "26/03/2026" },
   { img: hoiNghi, alt: "Hội nghị", title: "Hội nghị triển khai Nghị quyết về phát triển kinh tế - xã hội vùng Duyên hải Nam Trung Bộ", date: "25/03/2026" },
   { img: caoToc, alt: "Cao tốc", title: "Đẩy nhanh tiến độ thi công các tuyến cao tốc trọng điểm khu vực miền Trung", date: "25/03/2026" },
+  { img: duongSat, alt: "Đường sắt", title: "Khánh Hòa đặt mục tiêu 100% xã, phường, đặc khu đạt chuẩn phát triển văn hóa toàn diện", date: "24/03/2026" },
+  { img: yTe, alt: "Y tế", title: "Kế hoạch phòng bệnh phong giai đoạn 2026 – 2030", date: "24/03/2026" },
 ];
 
 const citizenNews2 = [
@@ -27,6 +29,8 @@ const citizenNews2 = [
   { img: duaThuyen, alt: "Lao động", title: "Hưởng ứng Ngày Thế giới phòng, chống bệnh lao 24-3: Phát hiện sớm để tiến tới chấm dứt bệnh lao", date: "24/03/2026" },
   { img: duongSat, alt: "Đường sắt", title: "Quy hoạch mạng lưới đường sắt quốc gia thời kỳ 2021–2030, tầm nhìn đến năm 2050", date: "23/03/2026" },
   { img: xayDung, alt: "Quy hoạch", title: "Phê duyệt quy hoạch sử dụng đất giai đoạn 2026–2030 trên địa bàn tỉnh", date: "22/03/2026" },
+  { img: chuyenDoiSo, alt: "Chuyển đổi số", title: "Nâng cao hiệu quả phối hợp trong triển khai các dự án đầu tư xây dựng", date: "21/03/2026" },
+  { img: caoToc, alt: "Giao thông", title: "Xây dựng Khánh Hòa trở thành điểm đến của các sự kiện văn hóa, nghệ thuật và giải trí biển", date: "20/03/2026" },
 ];
 
 const policyNews = [
