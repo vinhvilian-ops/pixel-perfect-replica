@@ -17,12 +17,16 @@ const citizenNews = [
   { img: xayDung, alt: "Xây dựng", title: "Công bố giá vật liệu xây dựng ngay khi có biến động thị trường", date: "27/03/2026" },
   { img: chuyenDoiSo, alt: "Đăng kiểm", title: "Cục Đăng kiểm tường minh nhiều vấn đề liên quan đến quy trình kiểm tra khí thải với động cơ diesel", date: "27/03/2026" },
   { img: bongDa, alt: "Marathon", title: "Hơn 12.000 vận động viên tranh tài tại Giải vô địch quốc gia Marathon – Báo Tiền Phong lần thứ 67", date: "26/03/2026" },
+  { img: hoiNghi, alt: "Hội nghị", title: "Hội nghị triển khai Nghị quyết về phát triển kinh tế - xã hội vùng Duyên hải Nam Trung Bộ", date: "25/03/2026" },
+  { img: caoToc, alt: "Cao tốc", title: "Đẩy nhanh tiến độ thi công các tuyến cao tốc trọng điểm khu vực miền Trung", date: "25/03/2026" },
 ];
 
 const citizenNews2 = [
   { img: yTe, alt: "Hạt nhân", title: "Tăng mạnh mức phạt, siết chặt quản lý hoạt động bức xạ, hạt nhân", date: "26/03/2026" },
   { img: hocSinh, alt: "Thi THPT", title: "Lịch THI TỐT NGHIỆP THPT năm 2026", date: "25/03/2026" },
   { img: duaThuyen, alt: "Lao động", title: "Hưởng ứng Ngày Thế giới phòng, chống bệnh lao 24-3: Phát hiện sớm để tiến tới chấm dứt bệnh lao", date: "24/03/2026" },
+  { img: duongSat, alt: "Đường sắt", title: "Quy hoạch mạng lưới đường sắt quốc gia thời kỳ 2021–2030, tầm nhìn đến năm 2050", date: "23/03/2026" },
+  { img: xayDung, alt: "Quy hoạch", title: "Phê duyệt quy hoạch sử dụng đất giai đoạn 2026–2030 trên địa bàn tỉnh", date: "22/03/2026" },
 ];
 
 const policyNews = [
