@@ -18,12 +18,16 @@ const directiveNews = [
   { img: xayDung, alt: "Xây dựng", title: "Nâng cao hiệu quả phối hợp trong triển khai các dự án đầu tư xây dựng", date: "29/03/2026" },
   { img: vanHoa, alt: "Văn hóa", title: "Xây dựng Khánh Hòa trở thành điểm đến của các sự kiện văn hóa, nghệ thuật và giải trí biển", date: "27/03/2026" },
   { img: nhaTrangBay, alt: "Văn hóa", title: "Khánh Hòa đặt mục tiêu 100% xã, phường, đặc khu đạt chuẩn phát triển văn hóa toàn diện vào năm 2030", date: "27/03/2026" },
+  { img: caoToc, alt: "Giao thông", title: "Đẩy nhanh tiến độ hoàn thiện tuyến cao tốc Nha Trang – Cam Lâm giai đoạn 2", date: "26/03/2026" },
+  { img: hoiNghi, alt: "Hội nghị", title: "Hội nghị sơ kết 3 năm thực hiện Nghị quyết về phát triển kinh tế biển", date: "25/03/2026" },
 ];
 
 const directiveNews2 = [
   { img: chuyenDoiSo, alt: "Quốc tế", title: "Triển khai Kế hoạch Ngày Tôn vinh tiếng Việt trong cộng đồng người Việt Nam ở nước ngoài năm 2026", date: "27/03/2026" },
   { img: duLich, alt: "Thuế", title: "Nâng cao hiệu quả quản lý thuế trên địa bàn tỉnh", date: "27/03/2026" },
   { img: yTe, alt: "Y tế", title: "Kế hoạch phòng, chống bệnh phong giai đoạn 2026 – 2030", date: "26/03/2026" },
+  { img: duaThuyen, alt: "Thể thao", title: "Tổ chức thành công Giải đua thuyền truyền thống tỉnh Khánh Hòa lần thứ XII", date: "25/03/2026" },
+  { img: hocSinh, alt: "Giáo dục", title: "Triển khai chương trình giáo dục kỹ năng sống cho học sinh tiểu học trên toàn tỉnh", date: "24/03/2026" },
 ];
 
 const sectorNews = [
