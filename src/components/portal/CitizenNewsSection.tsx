@@ -213,6 +213,13 @@ const CitizenNewsSection = () => {
                 ))}
               </div>
             </SidebarPanel>
+
+            <SidebarPanel title="Bản đồ hành chính tỉnh Khánh Hòa" icon="🗺" variant="accent">
+              <div className="p-4 text-center">
+                <div className="bg-gradient-to-br from-[#e8f4f0] to-[#c8e8df] rounded-lg p-8 min-h-[280px] flex items-center justify-center text-6xl mb-2">🗺</div>
+                <a href="#" className="text-[13px] text-primary font-semibold no-underline">Xem bản đồ đầy đủ →</a>
+              </div>
+            </SidebarPanel>
           </div>
         </div>
       </div>
