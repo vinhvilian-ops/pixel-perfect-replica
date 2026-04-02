@@ -89,10 +89,10 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2">
-          <button className="w-[38px] h-[38px] border-none bg-gray-100 rounded-[9px] flex items-center justify-center text-gray-700 hover:bg-primary/10 hover:text-primary transition-all">
+          <button className="w-[38px] h-[38px] border-none bg-white/20 rounded-[9px] flex items-center justify-center text-white hover:bg-white/30 transition-all">
             <Search className="w-4 h-4" />
           </button>
-          <button className="w-[38px] h-[38px] border-none bg-gray-100 rounded-[9px] flex items-center justify-center text-gray-700 hover:bg-primary/10 hover:text-primary transition-all">
+          <button className="w-[38px] h-[38px] border-none bg-white/20 rounded-[9px] flex items-center justify-center text-white hover:bg-white/30 transition-all">
             <Moon className="w-4 h-4" />
           </button>
         </div>
