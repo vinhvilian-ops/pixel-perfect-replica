@@ -45,8 +45,8 @@ const Header = () => {
         <a href="#" className="flex items-center gap-3 flex-shrink-0 min-w-[200px]">
           <img src={logoKH} alt="Logo Khánh Hòa" className="w-[46px] h-[46px] object-contain" />
           <div className="leading-tight">
-            <div className="text-[13px] font-bold text-primary">Cổng Thông Tin Điện Tử</div>
-            <div className="text-[11px] text-gray-500 font-medium">Tỉnh Khánh Hòa</div>
+            <div className="text-[13px] font-bold text-white">Cổng Thông Tin Điện Tử</div>
+            <div className="text-[11px] text-white/70 font-medium">Tỉnh Khánh Hòa</div>
           </div>
         </a>
 
