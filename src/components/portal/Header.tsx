@@ -62,8 +62,8 @@ const Header = () => {
                 href={item.href}
                 className={`flex items-center gap-1 px-3.5 py-2 text-[13.5px] font-semibold rounded-sm whitespace-nowrap transition-all ${
                   item.active
-                    ? "text-primary bg-primary/[0.07]"
-                    : "text-gray-700 hover:text-primary hover:bg-primary/[0.07]"
+                    ? "text-white bg-white/20"
+                    : "text-white/90 hover:text-white hover:bg-white/20"
                 }`}
               >
                 {item.label}
