@@ -176,9 +176,10 @@ const CitizenNewsSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 to-gray-100/90"></div>
               <div className="relative p-3 flex flex-col gap-2.5">
                 {promoLinks.map((link, i) => (
-                  <a key={i} href="#" className={`${link.gradient} block rounded-xl px-[18px] py-3.5 no-underline text-center shadow-sm hover:opacity-90 hover:scale-[1.02] transition-all`}>
-                    <div className="text-[13px] font-extrabold text-primary-foreground">{link.title}</div>
-                    <div className="text-[11px] font-semibold text-primary-foreground/80 mt-0.5">{link.sub}</div>
+                  <a key={i} href="#" className={`${link.gradient} relative block rounded-xl px-[18px] py-3.5 no-underline text-center shadow-sm hover:opacity-90 hover:scale-[1.02] transition-all overflow-hidden`}>
+                    <img src={link.bg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-15 mix-blend-overlay pointer-events-none" loading="lazy" />
+                    <div className="relative text-[13px] font-extrabold text-primary-foreground">{link.title}</div>
+                    <div className="relative text-[11px] font-semibold text-primary-foreground/80 mt-0.5">{link.sub}</div>
                   </a>
                 ))}
               </div>
