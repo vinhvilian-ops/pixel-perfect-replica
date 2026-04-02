@@ -40,13 +40,13 @@ const Header = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <header className="bg-background sticky top-0 z-50 shadow-[0_2px_20px_rgba(0,63,136,0.10)]">
+    <header className="bg-destructive sticky top-0 z-50 shadow-[0_2px_20px_rgba(0,63,136,0.10)]">
       <div className="container flex items-center gap-6 h-[72px]">
         <a href="#" className="flex items-center gap-3 flex-shrink-0 min-w-[200px]">
           <img src={logoKH} alt="Logo Khánh Hòa" className="w-[46px] h-[46px] object-contain" />
           <div className="leading-tight">
-            <div className="text-[13px] font-bold text-primary">Cổng Thông Tin Điện Tử</div>
-            <div className="text-[11px] text-gray-500 font-medium">Tỉnh Khánh Hòa</div>
+            <div className="text-[13px] font-bold text-white">Cổng Thông Tin Điện Tử</div>
+            <div className="text-[11px] text-white/70 font-medium">Tỉnh Khánh Hòa</div>
           </div>
         </a>
 
@@ -62,13 +62,13 @@ const Header = () => {
                 href={item.href}
                 className={`flex items-center gap-1 px-3.5 py-2 text-[13.5px] font-semibold rounded-sm whitespace-nowrap transition-all ${
                   item.active
-                    ? "text-primary bg-primary/[0.07]"
-                    : "text-gray-700 hover:text-primary hover:bg-primary/[0.07]"
+                    ? "text-white bg-white/20"
+                    : "text-white/90 hover:text-white hover:bg-white/20"
                 }`}
               >
                 {item.label}
                 {item.children && (
-                  <span className="text-[10px] text-gray-500 transition-transform group-hover:rotate-180">▾</span>
+                  <span className="text-[10px] text-white/60 transition-transform group-hover:rotate-180">▾</span>
                 )}
               </a>
               {item.children && openDropdown === item.label && (
@@ -89,10 +89,10 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2">
-          <button className="w-[38px] h-[38px] border-none bg-gray-100 rounded-[9px] flex items-center justify-center text-gray-700 hover:bg-primary/10 hover:text-primary transition-all">
+          <button className="w-[38px] h-[38px] border-none bg-white/20 rounded-[9px] flex items-center justify-center text-white hover:bg-white/30 transition-all">
             <Search className="w-4 h-4" />
           </button>
-          <button className="w-[38px] h-[38px] border-none bg-gray-100 rounded-[9px] flex items-center justify-center text-gray-700 hover:bg-primary/10 hover:text-primary transition-all">
+          <button className="w-[38px] h-[38px] border-none bg-white/20 rounded-[9px] flex items-center justify-center text-white hover:bg-white/30 transition-all">
             <Moon className="w-4 h-4" />
           </button>
         </div>

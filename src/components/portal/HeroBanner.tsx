@@ -7,7 +7,7 @@ const HeroBanner = () => {
     <section className="min-h-[420px] relative overflow-hidden flex items-center">
       <div className="absolute inset-0">
         <img src={bauCu} alt="Bầu cử ĐBQH" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/90 via-primary/80 to-teal/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary/85 to-transparent" />
       </div>
 
       <div className="absolute inset-0">
