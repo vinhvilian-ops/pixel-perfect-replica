@@ -84,13 +84,6 @@ const TourismSection = () => {
           </div>
 
           <div>
-            <SidebarPanel title="Bản đồ hành chính tỉnh Khánh Hòa" icon="🗺" variant="accent">
-              <div className="p-4 text-center">
-                <div className="bg-gradient-to-br from-[#e8f4f0] to-[#c8e8df] rounded-lg p-6 text-5xl mb-2">🗺</div>
-                <a href="#" className="text-[13px] text-primary font-semibold no-underline">Xem bản đồ đầy đủ →</a>
-              </div>
-            </SidebarPanel>
-
             {socialLinks.map((link, i) => (
               <a key={i} href="#" className={`${link.gradient} block rounded-xl px-[18px] py-4 no-underline text-center mb-4 shadow-sm hover:opacity-90 transition-opacity`}>
                 <div className="text-[22px] mb-1">{link.icon}</div>
