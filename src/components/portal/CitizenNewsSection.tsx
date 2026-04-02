@@ -52,12 +52,12 @@ const pressItems = [
 ];
 
 const promoLinks = [
-  { title: "AI PHÁP LUẬT", sub: "Cổng Pháp luật quốc gia", gradient: "bg-gradient-to-br from-primary to-[#1a1a8e]" },
-  { title: "THÔNG TIN DỰ ÁN", sub: "ĐIỆN HẠT NHÂN NINH THUẬN", gradient: "bg-gradient-to-br from-primary-light to-teal" },
-  { title: "BẢN ĐỒ SỐ", sub: "65 xã, phường, đặc khu", gradient: "bg-gradient-to-br from-[#00588a] to-teal" },
-  { title: "TRA CỨU GIÁ ĐẤT", sub: "Tỉnh Khánh Hòa", gradient: "bg-gradient-to-br from-[#1a7a42] to-green" },
-  { title: "CÔNG KHAI NGÂN SÁCH", sub: "Tỉnh Khánh Hòa", gradient: "bg-gradient-to-br from-accent-dark to-accent" },
-  { title: "CƠ SỞ DỮ LIỆU QUỐC GIA", sub: "Về văn bản pháp luật", gradient: "bg-gradient-to-br from-primary to-primary-light" },
+  { title: "AI PHÁP LUẬT", sub: "Cổng Pháp luật quốc gia", gradient: "bg-gradient-to-br from-primary to-[#1a1a8e]", bg: chuyenDoiSo },
+  { title: "THÔNG TIN DỰ ÁN", sub: "ĐIỆN HẠT NHÂN NINH THUẬN", gradient: "bg-gradient-to-br from-primary-light to-teal", bg: duongSat },
+  { title: "BẢN ĐỒ SỐ", sub: "65 xã, phường, đặc khu", gradient: "bg-gradient-to-br from-[#00588a] to-teal", bg: caoToc },
+  { title: "TRA CỨU GIÁ ĐẤT", sub: "Tỉnh Khánh Hòa", gradient: "bg-gradient-to-br from-[#1a7a42] to-green", bg: xayDung },
+  { title: "CÔNG KHAI NGÂN SÁCH", sub: "Tỉnh Khánh Hòa", gradient: "bg-gradient-to-br from-accent-dark to-accent", bg: hoiNghi },
+  { title: "CƠ SỞ DỮ LIỆU QUỐC GIA", sub: "Về văn bản pháp luật", gradient: "bg-gradient-to-br from-primary to-primary-light", bg: yTe },
 ];
 
 const tags = ["An toàn giao thông", "Phòng cháy, chữa cháy", "Ứng phó sự cố, thiên tai", "Nông nghiệp – TN&MT", "Chuyển đổi số", "Chương trình MTQG", "Khoa học và Công nghệ", "Phổ biến GDPL", "Đường dây nóng"];
@@ -176,9 +176,10 @@ const CitizenNewsSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 to-gray-100/90"></div>
               <div className="relative p-3 flex flex-col gap-2.5">
                 {promoLinks.map((link, i) => (
-                  <a key={i} href="#" className={`${link.gradient} block rounded-xl px-[18px] py-3.5 no-underline text-center shadow-sm hover:opacity-90 hover:scale-[1.02] transition-all`}>
-                    <div className="text-[13px] font-extrabold text-primary-foreground">{link.title}</div>
-                    <div className="text-[11px] font-semibold text-primary-foreground/80 mt-0.5">{link.sub}</div>
+                  <a key={i} href="#" className={`${link.gradient} relative block rounded-xl px-[18px] py-3.5 no-underline text-center shadow-sm hover:opacity-90 hover:scale-[1.02] transition-all overflow-hidden`}>
+                    <img src={link.bg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-15 mix-blend-overlay pointer-events-none" loading="lazy" />
+                    <div className="relative text-[13px] font-extrabold text-primary-foreground">{link.title}</div>
+                    <div className="relative text-[11px] font-semibold text-primary-foreground/80 mt-0.5">{link.sub}</div>
                   </a>
                 ))}
               </div>
