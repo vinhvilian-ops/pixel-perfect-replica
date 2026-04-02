@@ -40,7 +40,7 @@ const Header = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <header className="bg-background sticky top-0 z-50 shadow-[0_2px_20px_rgba(0,63,136,0.10)]">
+    <header className="bg-destructive sticky top-0 z-50 shadow-[0_2px_20px_rgba(0,63,136,0.10)]">
       <div className="container flex items-center gap-6 h-[72px]">
         <a href="#" className="flex items-center gap-3 flex-shrink-0 min-w-[200px]">
           <img src={logoKH} alt="Logo Khánh Hòa" className="w-[46px] h-[46px] object-contain" />
