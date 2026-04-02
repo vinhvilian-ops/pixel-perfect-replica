@@ -68,7 +68,7 @@ const Header = () => {
               >
                 {item.label}
                 {item.children && (
-                  <span className="text-[10px] text-gray-500 transition-transform group-hover:rotate-180">▾</span>
+                  <span className="text-[10px] text-white/60 transition-transform group-hover:rotate-180">▾</span>
                 )}
               </a>
               {item.children && openDropdown === item.label && (
