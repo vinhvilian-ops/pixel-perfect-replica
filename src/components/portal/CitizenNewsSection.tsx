@@ -52,12 +52,12 @@ const pressItems = [
 ];
 
 const promoLinks = [
-  { title: "AI PHÁP LUẬT", sub: "Cổng Pháp luật quốc gia", gradient: "bg-gradient-to-br from-primary to-[#1a1a8e]" },
-  { title: "THÔNG TIN DỰ ÁN", sub: "ĐIỆN HẠT NHÂN NINH THUẬN", gradient: "bg-gradient-to-br from-primary-light to-teal" },
-  { title: "BẢN ĐỒ SỐ", sub: "65 xã, phường, đặc khu", gradient: "bg-gradient-to-br from-[#00588a] to-teal" },
-  { title: "TRA CỨU GIÁ ĐẤT", sub: "Tỉnh Khánh Hòa", gradient: "bg-gradient-to-br from-[#1a7a42] to-green" },
-  { title: "CÔNG KHAI NGÂN SÁCH", sub: "Tỉnh Khánh Hòa", gradient: "bg-gradient-to-br from-accent-dark to-accent" },
-  { title: "CƠ SỞ DỮ LIỆU QUỐC GIA", sub: "Về văn bản pháp luật", gradient: "bg-gradient-to-br from-primary to-primary-light" },
+  { title: "AI PHÁP LUẬT", sub: "Cổng Pháp luật quốc gia", gradient: "bg-gradient-to-br from-primary to-[#1a1a8e]", bg: chuyenDoiSo },
+  { title: "THÔNG TIN DỰ ÁN", sub: "ĐIỆN HẠT NHÂN NINH THUẬN", gradient: "bg-gradient-to-br from-primary-light to-teal", bg: duongSat },
+  { title: "BẢN ĐỒ SỐ", sub: "65 xã, phường, đặc khu", gradient: "bg-gradient-to-br from-[#00588a] to-teal", bg: caoToc },
+  { title: "TRA CỨU GIÁ ĐẤT", sub: "Tỉnh Khánh Hòa", gradient: "bg-gradient-to-br from-[#1a7a42] to-green", bg: xayDung },
+  { title: "CÔNG KHAI NGÂN SÁCH", sub: "Tỉnh Khánh Hòa", gradient: "bg-gradient-to-br from-accent-dark to-accent", bg: hoiNghi },
+  { title: "CƠ SỞ DỮ LIỆU QUỐC GIA", sub: "Về văn bản pháp luật", gradient: "bg-gradient-to-br from-primary to-primary-light", bg: yTe },
 ];
 
 const tags = ["An toàn giao thông", "Phòng cháy, chữa cháy", "Ứng phó sự cố, thiên tai", "Nông nghiệp – TN&MT", "Chuyển đổi số", "Chương trình MTQG", "Khoa học và Công nghệ", "Phổ biến GDPL", "Đường dây nóng"];
