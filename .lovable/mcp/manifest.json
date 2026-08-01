@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "sdk_version": "0.26.1",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "oauth",
+    "issuer": "https://mhqnbfauxmmrglgfdwex.supabase.co/auth/v1",
+    "accepted_audiences": [
+      "authenticated"
+    ]
+  },
+  "mcp": {
+    "server": {
+      "name": "pixel-perfect-replica",
+      "version": "0.1.0",
+      "title": "Pixel Perfect Replica"
+    },
+    "tools": [
+      {
+        "name": "list_news",
+        "title": "List portal news",
+        "description": "List recent news and announcements published on the Khánh Hòa provincial portal, optionally filtered by category or a keyword in the title.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "description": "Optional category filter, e.g. 'Y tế', 'Giao thông', 'Chính sách'."
+            },
+            "query": {
+              "type": "string",
+              "description": "Optional keyword to match against the article title."
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of articles to return (default 10)."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_organizations",
+        "title": "List departments and localities",
+        "description": "List the provincial departments/agencies (sở, ban, ngành) and the local administrative units (xã, phường, đặc khu) of Khánh Hòa province.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "departments",
+                "localities",
+                "all"
+              ],
+              "description": "Which set to return: departments, localities, or all (default)."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_contact_info",
+        "title": "Get portal contact info",
+        "description": "Get the official contact details of the Khánh Hòa provincial portal: address, phone numbers, email, managing office and website.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
